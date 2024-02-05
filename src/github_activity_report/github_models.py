@@ -1,7 +1,7 @@
 import datetime
+from typing import Annotated, Literal, Union
+
 from pydantic import BaseModel, Field, RootModel
-from typing import Literal, Union
-from typing_extensions import Annotated
 
 
 class EventActor(BaseModel):
