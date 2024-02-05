@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "github_activity_report"
 authors = [{ name = "benoit74", email = "benoit74@users.noreply.github.com" }]
 keywords = ["github"]
-requires-python = ">=3.11,<3.12"
+requires-python = ">=3.12,<3.13"
 description = "A really smart and exhaustive synthesis of Github activity"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
@@ -75,7 +75,7 @@ html = "inv coverage --html --args '{args}'"
 
 [tool.hatch.envs.lint]
 template = "lint"
-python = "py311"
+python = "py312"
 skip-install = false
 features = ["scripts", "lint"]
 
@@ -96,10 +96,10 @@ all = "inv checkall --args '{args}'"
 
 [tool.black]
 line-length = 88
-target-version = ['py311']
+target-version = ['py312']
 
 [tool.ruff]
-target-version = "py311"
+target-version = "py312"
 line-length = 88
 src = ["src"]
 
@@ -220,6 +220,6 @@ exclude_lines = [
 include = ["src", "tests", "tasks.py"]
 exclude = ["**/__pycache__"]
 extraPaths = ["src"]
-pythonVersion = "3.11"
+pythonVersion = "3.12"
 pythonPlatform = "All"
 typeCheckingMode="strict"
